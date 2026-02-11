@@ -16,7 +16,6 @@ let words = [
     "গছ = Tree",
     "ফুল = Flower",
     "নদী = River",
-    "পানি = Water",
     "ভাত = Rice",
     "চাহ = Tea",
     "দিন = Day",
@@ -38,13 +37,13 @@ let words = [
     "কথা = Talk"
 ];
 
-// DAILY WORD
+
 let today = new Date().getDate();
 let index = today % words.length;
 
 document.getElementById("word").innerText = words[index];
 
-// BUTTON CLICK
+
 function nextWord() {
     index++;
     if (index >= words.length) {
